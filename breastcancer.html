@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Breast Cancer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="quiz.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <script src = "breastcancer.js"></script>
+    
+</head>
+
+<body>
+    <h1> <em> << V-Lab >>  </em> <br>Do you have any of these following symptoms? Tick these boxes to check How Safe You Are. </h1>
+    
+    
+    <form id = "quiz" name = "quiz">
+    
+    
+    <p class = "questions">New lump in the breast or underarm?</p>
+    <input id = "textbox" type = "text" name = "question1">
+    
+    <p class = "questions">Thickening or swelling of part of the breast?</p>
+    <input type = "radio" id = "mc" name = "question2" value = "yes"> Yes<br>
+    <input type = "radio" id = "mc" name = "question2" value = "no"> No<br>
+    
+    <p class = "questions">Redness or flaky skin in the nipple area or the breast?</p>
+    
+    <input type = "radio" id = "mc" name = "question3" value = "yes"> Yes <br>
+    <input type = "radio" id = "mc" name = "question3" value = "no"> No<br>
+    
+    
+    <input id = "button" type = "button" value = "I'm finished!" onclick = "check();">
+    
+    
+    </form>
+    
+    <div id = "after_submit">
+    <p id = "number_correct"></p>
+    <p id = "message"></p>
+    <img id = "picture">
+    </div>
+    </html>
+    
+</body>
